@@ -1,0 +1,62 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#main-section {
+  display: flex;
+  position: relative;
+}
+.container-circle {
+  border: 2px solid rgb(134, 199, 73);
+  width: 80vw;
+  height: 90vh;
+  position: relative;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+}
+.newElemContainer {
+  padding: 2rem;
+  height: 90vh;
+}
+
+p,
+span {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100px;
+  margin: 2px;
+  border: 3px solid rgb(232, 169, 73);
+}
+p:first-child {
+  outline: 3px solid red;
+  margin: 5px 0;
+}
+
+.circle {
+  height: 100px;
+  aspect-ratio: 1;
+  background-color: aquamarine;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Animation Section 
+  ---------------------------> */
+
+@keyframes animate {
+  from {
+    transform: translate(100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
